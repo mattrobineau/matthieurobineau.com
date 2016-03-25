@@ -1,0 +1,53 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans+Condensed:300,700,300italic|Ubuntu:400,500,700italic,700,400italic,500italic|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+
+  <title> {{ model.page_title }} </title>
+
+  <style>
+    h1 {
+        font-size: 64px;
+        font-family: {{model.font}};
+        margin: 0;
+        padding: 0;
+    }
+    span a {
+        text-decoration: none !important;
+        color: inherit;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+    }
+    span a:hover {
+        color: magenta;
+    }
+    #link-icons {
+    }
+    #container {
+        display:inline-block;
+        position:relative;
+        top:50%;
+        left: 10%;
+    }
+  </style>
+ </head>
+ <body>
+  <div id="container">
+    <h1> Matthieu Robineau </h1>
+    <div id="link-icons">
+     <span id="icons">
+         <a href="https://github.com/mattrobineau">
+             <i class="fa fa-github-square fa-4x"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/matthieurobineau">
+             <i class="fa fa-linkedin-square fa-4x"></i>
+         </a>
+     </span>
+    </div>
+  </div>
+ </body>
+</html>
+
