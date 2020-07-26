@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Projects - Matthieu Robineau</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            color: #272727;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        #header {
+            font-size: 2em;
+            font-family: Oleo Script, sans-serif;
+            margin: 0 0 3em 0;
+            padding: 0;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: #272727;
+        }
+
+        #header a h1 {
+            margin: 0;
+        }
+
+        #container {
+            margin-left: 12em;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: row;
+            margin: 2em 0;
+        }
+
+        .project .title {
+            font-size: 1.2em;
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+        }
+
+        .thumbnail {
+            height: 120px;
+            width: 180px;
+        }
+
+        .project .blurb {
+            margin-left: 2em;
+        }
+
+        .project .blurb .description {
+            width: 50em;
+        }
+
+        .project .blurb .stack {
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            font-size: .8em;
+            color: #818181;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <a href="https://matthieurobineau.com">
+            <h1>MR</h1>
+        </a>
+    </div>
+    <div id="container">
+        <div class="project">
+            <div class="thumbnail">
+                <a href="images/projects/dotnetsignals.com.png">
+                    <img src="images/projects/dotnetsignals.com-180x120.png" />
+                </a>
+            </div>
+            <div class="blurb">
+                <a href="https://dotnetsignals.com">
+                    <h3 class="title">.NET Signals</h3>
+                </a>
+                <span class="stack">node, express, typescript, html, vanilla js</span>
+                <p class="description">A website created for the aggregation of .NET rss feeds.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="thumbnail">
+                <a href="images/projects/wows.png">
+                    <img src="images/projects/wows-180x120.png" />
+                </a>
+            </div>
+            <div class="blurb">
+                <a href="https://github.com/mattrobineau/wowsfilter">
+                    <h3 class="title">World of Warships filter</h3>
+                </a>
+                <span class="stack">react, typescript</span>
+                <p class="description">A website used to quickly display relevant information to World of Warships
+                    players. The site supported filtering, ordering, and sorting by various ship features.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="thumbnail">
+                <img src="images/projects/noimage-180x120.png" />
+            </div>
+            <div class="blurb">
+                <a href="https://github.com/mattrobineau/stories">
+                    <h3 class="title">Stories</h3>
+                </a>
+                <span class="stack">.net core, postgresql, rabbitmq</span>
+                <p class="description">A reddit or HN like news aggregator with users, upvoting/downvoting, link
+                    submitions.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="thumbnail">
+                <a href="images/projects/blog.png">
+                    <img src="images/projects/blog-180x120.png" />
+                </a>
+            </div>
+            <div class="blurb">
+                <a href="https://blog.matthieurobineau.com">
+                    <h3 class="title">Blog</h3>
+                </a>
+                <span class="stack">jekyll, markdown, github pages</span>
+                <p class="description">My blog</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

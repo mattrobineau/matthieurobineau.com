@@ -1,53 +1,109 @@
 <html>
- <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 
-  <title> Matthieu Robineau - Software Solutions </title>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
 
-  <style>
-    h1 {
-        font-size: 64px;
-        font-family: Oleo Script, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    span a {
-        text-decoration: none !important;
-        color: inherit;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
-    }
-    span a:hover {
-        color: magenta;
-    }
-    #container {
-        display:inline-block;
-        position:relative;
-        top:50%;
-        left: 10%;
-    }
-  </style>
- </head>
- <body>
-  <div id="container">
-    <h1> Matthieu Robineau </h1>
-    <div id="link-icons">
-     <span id="icons">
-         <a href="https://github.com/mattrobineau">
-             <i class="fa fa-github-square fa-4x"></i>
-         </a>
-         <a href="https://www.linkedin.com/in/matthieurobineau">
-             <i class="fa fa-linkedin-square fa-4x"></i>
-         </a>
-         <a href="https://blog.matthieurobineau.com">
-             <i class="fa fa-rss-square fa-4x"></i>
-         </a>
-     </span>
+    <title> Matthieu Robineau - Software Solutions </title>
+
+    <style>
+        body {
+            background: #f0f0f0;
+            color:#272727;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-family: Oleo Script, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            margin-left: 12em;
+        }
+
+        #link-icons {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #link-icons>div {
+            height: 55px;
+            width: 55px;
+            text-align: center;
+            background: #272727;
+            margin: 2px;
+            border-radius: 12px;
+            border: 2px solid #272727;
+        }
+
+        #link-icons>div:hover {
+            background: magenta;
+            border-color: magenta;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        #link-icons>div>a {
+            display: inline-block;
+            height: 55px;
+            width: 55px;
+        }
+
+        #link-icons>div>a>i {
+            line-height: 56px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1> Matthieu Robineau </h1>
+        <div>
+            <div id="link-icons">
+                <div id="github">
+                    <a href="https://github.com/mattrobineau">
+                        <i class="fa fa-github fa-3x"></i>
+                    </a>
+                </div>
+                <div id="linkedin">
+                    <a href="https://www.linkedin.com/in/matthieurobineau">
+                        <i class="fa fa-linkedin fa-3x"></i>
+                    </a>
+                </div>
+                <div id="blog">
+                    <a href="https://blog.matthieurobineau.com">
+                        <i class="fa fa-rss fa-3x"></i>
+                    </a>
+                </div>
+                <div id="projects">
+                    <a href="projects.html">
+                        <i class="fa fa-archive fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
- </body>
+</body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58397797-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
 </html>
